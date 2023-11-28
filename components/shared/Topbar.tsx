@@ -2,7 +2,8 @@ import { SignedIn, SignOutButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
-import OrgSwitcherButton from "./OrgSwitcherButton";
+// import OrgSwitcherButton from "./OrgSwitcherButton";
+import UserProfileButton from "./UserProfileButton";
 
 function Topbar() {
   return (
@@ -29,7 +30,8 @@ function Topbar() {
             </SignOutButton>
           </SignedIn>
         </div>
-        <OrgSwitcherButton />
+        <UserProfileButton />
+        {/* <OrgSwitcherButton /> */}
         <div className="block max-sm:hidden">
           <ModeToggle />
         </div>

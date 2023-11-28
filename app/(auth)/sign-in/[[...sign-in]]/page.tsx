@@ -5,8 +5,10 @@ import { dark } from "@clerk/themes";
 import { useTheme } from "next-themes";
 
 export default function Page() {
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
   return (
-    <SignIn appearance={{ baseTheme: theme === "dark" ? dark : undefined }} />
+    <SignIn
+      appearance={{ baseTheme: resolvedTheme === "dark" ? dark : undefined }}
+    />
   );
 }
