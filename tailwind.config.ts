@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import colors from 'tailwindcss/colors'
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -173,20 +175,20 @@ module.exports = {
     },
     extend: {
       colors: {
-        "primary-500": "#877EFF",
-        "secondary-500": "#FFB620",
-        blue: "#0095F6",
-        "logout-btn": "#FF5A5A",
+        "primary-500": colors.green[500],
+        "secondary-500": colors.emerald[500],
+        blue: colors.blue[500],
+        "logout-btn": colors.amber[500],
         "navbar-menu": "rgba(16, 16, 18, 0.6)",
-        "dark-1": "#000000",
-        "dark-2": "#121417",
-        "dark-3": "#101012",
-        "dark-4": "#1F1F22",
-        "light-1": "#FFFFFF",
-        "light-2": "#EFEFEF",
-        "light-3": "#7878A3",
-        "light-4": "#5C5C7B",
-        "gray-1": "#697C89",
+        "dark-1": colors.slate[950],
+        "dark-2": colors.slate[900],
+        "dark-3": colors.slate[800],
+        "dark-4": colors.slate[700],
+        "light-1": colors.slate[50],
+        "light-2": colors.slate[100],
+        "light-3": colors.slate[200],
+        "light-4": colors.slate[300],
+        "gray-1": colors.gray[500],
         glassmorphism: "rgba(16, 16, 18, 0.60)",
       },
       boxShadow: {
